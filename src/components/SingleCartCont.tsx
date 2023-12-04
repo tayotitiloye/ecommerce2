@@ -2,8 +2,8 @@
 import React from 'react'
 import AddToCartBtn from './AddToCartBtn'
 import { Product } from 'src/app/utilis/interfaces'
-import {motion} from 'framer-motion'
-import { slideInFromLeft, slideInFromRight } from 'src/app/utilis/motion'
+//import {motion} from 'framer-motion'
+//import { slideInFromLeft, slideInFromRight } from 'src/app/utilis/motion'
 import Image from 'next/image'
 
 interface Data{

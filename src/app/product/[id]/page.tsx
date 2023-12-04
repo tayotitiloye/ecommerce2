@@ -1,8 +1,8 @@
 
-import Image from 'next/image'
+//import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import AddToCartBtn from 'src/components/AddToCartBtn'
+//import AddToCartBtn from 'src/components/AddToCartBtn'
 import SingleCartCont from 'src/components/SingleCartCont'
 // import AddToCart from 'src/components/AddToCart'
 // import AddToCartBtn from 'src/components/AddToCartBtn'
@@ -18,11 +18,11 @@ export type Product = {
        
 }
 
-interface Props {
-  onIncrease: () => void;
-  onDecrease: () => void;
-  qty: number;
-}
+// interface Props {
+//   onIncrease: () => void;
+//   onDecrease: () => void;
+//   qty: number;
+// }
     
 async function getData(id:number) {
   const res = await fetch(`https://fakestoreapi.com/products/${id}`)

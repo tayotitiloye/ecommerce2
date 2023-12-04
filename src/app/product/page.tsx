@@ -13,10 +13,10 @@ export type ProductType = { id: number
 
 
 
-      
-//'http://localhost:3000/api/product'
 
- async function getData() {
+
+
+async function getData() {
         
      const res = await fetch('https://fakestoreapi.com/products')
     

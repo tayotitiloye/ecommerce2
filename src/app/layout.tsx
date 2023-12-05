@@ -2,7 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import { ToastContainer } from 'react-toastify'
-import AuthProvider from 'src/components/AuthProvider'
 import Navbar from 'src/components/Navbar'
 import 'react-toastify/dist/ReactToastify.css';
 import Providers from 'src/components/Providers'
@@ -27,8 +26,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
             <ThemeProviders>
-              <AuthProvider>
-                <Providers>
+                             <Providers>
 
                   
                       <Navbar/>
@@ -37,8 +35,7 @@ export default function RootLayout({
                       <Footer />
                 
                 </Providers>  
-          </AuthProvider>
-          </ThemeProviders>
+                </ThemeProviders>
               
       </body>
     </html>

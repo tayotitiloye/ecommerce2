@@ -10,7 +10,7 @@ function DarkModeTheme() {
 
     const {resolvedTheme, theme, setTheme } = useTheme()
   return (
-      <div>
+      <div className='hidden md:block'>
       <button
         className=''
               onClick={() => {

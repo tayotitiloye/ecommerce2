@@ -13,7 +13,7 @@ function Newsletter() {
     function handleSubmit(params) {
 
         if (input === '')
-            return
+            return;
 
         try {
             

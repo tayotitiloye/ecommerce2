@@ -25,9 +25,7 @@ export type Product = {
 // }
     
 async function getData(id:number) {
-  const res = await fetch(`https://fakestoreapi.com/products/${id}`, {
-    cache: 'no-store'
-  })
+  const res = await fetch(`https://fakestoreapi.com/products/${id}`)
     
     if (!res.ok) {
         throw new Error('unable to fetch data')
@@ -36,6 +34,8 @@ async function getData(id:number) {
     return res.json()
 }
 
+
+export const revalidate = 0;
 
 const SingleProduct = async ({params}:{params: {id: number}}) => {
 

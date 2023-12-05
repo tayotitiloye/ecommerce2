@@ -5,7 +5,6 @@ import Featured from "src/components/Featured"
 import Hero from "src/components/Hero"
 import Slider from "src/components/Slider"
 import Vision from "src/components/Vision"
-import { getCurrentUser } from "src/lib/session"
 import Newsletter from 'src/components/Newsletter'
 
 async function getData() {

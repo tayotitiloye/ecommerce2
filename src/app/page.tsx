@@ -9,7 +9,7 @@ import Newsletter from 'src/components/Newsletter'
 
 async function getData() {
         
-     const res = await fetch('http://localhost:3000/api/product')
+     const res = await fetch('https://fakestoreapi.com/products')
     
     if(!res.ok) {
      throw new Error("Data fetching failed")
@@ -20,6 +20,7 @@ async function getData() {
      
 }
  
+export const revalidate = 0; 
 
 const Home = async  () => {
 

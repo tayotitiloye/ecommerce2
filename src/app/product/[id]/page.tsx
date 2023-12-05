@@ -25,7 +25,9 @@ export type Product = {
 // }
     
 async function getData(id:number) {
-  const res = await fetch(`https://fakestoreapi.com/products/${id}`)
+  const res = await fetch(`https://fakestoreapi.com/products/${id}`, {
+    cache: 'no-store'
+  })
     
     if (!res.ok) {
         throw new Error('unable to fetch data')

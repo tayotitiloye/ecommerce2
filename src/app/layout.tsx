@@ -15,7 +15,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Tayo ecommerce App',
-  description: 'home of shopping',
+  description: 'Home Of Shopping',
 }
 
 export default function RootLayout({

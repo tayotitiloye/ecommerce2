@@ -14,7 +14,7 @@ function DarkModeTheme() {
       <button
         className=''
               onClick={() => {
-                  setTheme(resolvedTheme === 'dark' ? 'light' : 'dark')
+                  setTheme(resolvedTheme === 'light' ? 'dark' : 'light')
           }}
           >
           {theme === 'light' ?  <FaRegMoon /> : <FiSun /> }

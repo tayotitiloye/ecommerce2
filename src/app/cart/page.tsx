@@ -1,4 +1,5 @@
 "use client";
+import Link from "next/link";
 import React from "react";
 import CartItemCard from "src/components/CartItemCard";
 import { TotalPriceSelector } from "src/store/features/cartSlice";
@@ -12,7 +13,14 @@ const CartPage = () => {
   );
 
   const totalPrice = useAppSelector(TotalPriceSelector);
-  
+   
+  if (cartItems.length === 0) {
+    return (<div className="mt-[200px] flex justify-center items-center capitalize font-bold p-4 text-2xl md:text-4xl">
+      <div> Your cart is empty kindly shop 
+      <Link href='/product' className="italic underline text-red-500 text-3xl md:text-5xl ml-2">here</Link>  
+      </div>
+    </div>)
+  }
   return (
     <>
     <div className="p-2 mt-[100px] ">

@@ -6,7 +6,7 @@ import { slideInFromRight } from 'src/app/utilis/motion'
 
 
 function Newsletter() {
-    const [input, setInput] = useState()
+    const [input, setInput] = useState('')
     const [open, setOpen] = useState(false)
 
     
@@ -41,12 +41,12 @@ function Newsletter() {
                         variants={slideInFromRight(.3)}
                         initial='hidden'
                         animate='visible'
-                        className='flex justify-center items-center absolute left-0 top-[2500px] md:top-[2100px] lg:top-[1600px] w-full h-[calc(100vh-3rem)] bg-black bg-opacity-75 '>
+                        className='flex justify-center items-center absolute left-0 top-[2900px] md:top-[2100px] lg:top-[1600px] w-full h-[calc(100vh-3rem)] bg-black bg-opacity-75 '>
                     <div className='w-full mx-20  h-60 bg-white content-center p-4 rounded-lg text-lg'>
                         
                     Thank you <span className='font-bold text-2xl text-red-600'>{input}</span> <br /> for Subscribing for our newsletter, we would reach out to you with your coupon.
                     
-                          <br /><br />  <button className='text-white bg-black rounded-md px-2 mt-2' onClick={()=>setOpen(!open)}>close</button>
+                          <br />  <button className='text-white bg-black rounded-md px-2' onClick={()=>setOpen(!open)}>close</button>
                         </div>
                 </motion.div>)}
                 
@@ -56,7 +56,7 @@ function Newsletter() {
                     <div className="tracking-8 md:flex-1">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sint unde quaerat ratione soluta veniam provident adipisci cumque eveniet tempore?
                     </div>
-                    <div className="flex border rounded-md md:flex-1 border-black">
+                    <div className="flex w-[75%] md:w-full border rounded-md md:flex-1 border-black">
                         <input onChange={(e)=> setInput(e.target.value)} required type="email" className="flex-[4] p-2" placeholder="Enter Email" />
                         
                         <button onClick={handleSubmit} className="flex[1] p-2 bg-yellow-700 border border-black text-black hover:text-white">Subscribe</button>

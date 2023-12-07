@@ -27,7 +27,7 @@ const Home = async  () => {
     const data = await getData()
     
   return (
-      <main className="px-4 pt-28">
+      <main className="px-4 pt-28 box-border overflow-x-hidden">
           
           <div>
               <Hero/>
@@ -35,7 +35,7 @@ const Home = async  () => {
           </div>
           <div >
               {/* Featured Products */}
-              <Featured products={data} />
+            +  <Featured products={data} />
               
           </div>
           <div>

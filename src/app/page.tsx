@@ -36,7 +36,7 @@ const Home = async  () => {
           </div>
           <div >
               {/* Featured Products */}
-            +  <Featured products={data} />
+              <Featured products={data} />
               
           </div>
           <div>

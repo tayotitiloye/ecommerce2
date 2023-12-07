@@ -32,7 +32,7 @@ function Navbar() {
                          
             {/* <Userlink /> */}
             
-            <DarkModeTheme />
+            {/* <DarkModeTheme /> */}
             
             <Link href='/cart'>
             <CartBtn />

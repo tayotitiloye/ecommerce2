@@ -6,7 +6,7 @@ import Navbar from 'src/components/Navbar'
 import 'react-toastify/dist/ReactToastify.css';
 import Providers from 'src/components/Providers'
 import Footer from 'src/components/Footer'
-import ThemeProviders from 'src/components/ThemeProvider'
+//import ThemeProviders from 'src/components/ThemeProvider'
 
 
 
@@ -25,8 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-            <ThemeProviders>
-                             <Providers>
+            {/* <ThemeProviders> */}
+                     <Providers>
 
                   
                       <Navbar/>
@@ -35,7 +35,7 @@ export default function RootLayout({
                       <Footer />
                 
                 </Providers>  
-                </ThemeProviders>
+            {/* </ThemeProviders> */}
               
       </body>
     </html>

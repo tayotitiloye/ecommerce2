@@ -9,7 +9,8 @@ import Newsletter from 'src/components/Newsletter'
 
 async function getData() {
         
-     const res = await fetch('https://fakestoreapi.com/products')
+    
+    const res = await fetch('https://fakestoreapi.com/products')
     
     if(!res.ok) {
      throw new Error("Data fetching failed")

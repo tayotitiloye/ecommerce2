@@ -42,6 +42,9 @@ const CartPage = () => {
                     
               </div>
       </div>
+      <Link href='/product' className="flex justify-end items-center">
+        <button className="bg-yellow-900 text-white p-2 mr-2 rounded-lg ">Continue Shopping</button>
+      </Link>
 
 
       </>

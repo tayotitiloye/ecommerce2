@@ -10,7 +10,7 @@ function Newsletter() {
     const [open, setOpen] = useState(false)
 
     
-    function handleSubmit(params) {
+    function handleSubmit() {
 
         if (input === '')
             return;
@@ -19,10 +19,12 @@ function Newsletter() {
             
             setOpen(true)
             
+            
         } catch (error) {
             console.log(error);
         }
     
+        
     } 
 
     useEffect(() => {
@@ -54,7 +56,7 @@ function Newsletter() {
                 <div className="flex flex-col gap-5 md:flex-row">
 
                     <div className="tracking-8 md:flex-1">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat sint unde quaerat ratione soluta veniam provident adipisci cumque eveniet tempore?
+                        Lorem ipsum kskw dolor sit amet consectetur adipisicing elit. Placeat sint unde quaerat ratione soluta veniam provident adipisci cumque eveniet tempore?
                     </div>
                     <div className="flex w-[75%] md:w-full border rounded-md md:flex-1 border-black">
                         <input onChange={(e)=> setInput(e.target.value)} required type="email" className="flex-[4] p-2" placeholder="Enter Email" />

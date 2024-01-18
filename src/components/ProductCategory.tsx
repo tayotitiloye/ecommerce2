@@ -25,11 +25,13 @@ const ProductCategory = ({ items }: Props) => {
     
     const [query, setQuery] = useState('')
     const [switchView, setSwitchView] = useState(true)
+    const [data, setDATA] = useState(items)
     
     const filteredItems = items.filter((item) => item.title.toLowerCase().includes(query.toLowerCase()))
    
     return ( 
         <div className=''>    
+           
             <input type="text" className='p-2 ml-8 bg-slate-200 my-3 text-black rounded-lg' placeholder='Search' value={query} onChange={(e)=>setQuery(e.target.value)} />
            
             <div className='ml-8'>
@@ -88,8 +90,8 @@ const ProductCategory = ({ items }: Props) => {
                     
                                 className='m-4 p-4 rounded-lg shadow-md hover:shadow-xl transition'>
                         
-                                <Link href={`/product/${pdt.id}`} key={pdt.id} className='w-full h-[45vh] md:m-4 md:p-4 cursor-pointer'>
-                                    <div className='w-full h-auto relative'>
+                                <Link href={`/product/${pdt.id}`} key={pdt.id} className='w-full group h-[45vh] md:m-4 md:p-4 cursor-pointer'>
+                                    <div className='w-full h-auto relative '>
                                     
                                 
                                         <Image src={pdt.image} alt={pdt.title} width={130} height={130} className='object-contain' />
@@ -98,7 +100,7 @@ const ProductCategory = ({ items }: Props) => {
                                         <div className=''>{pdt?.title}</div><span>$ {pdt.price}</span>
                                     </div>
                                 </Link>
-                        
+                                       
                             </motion.div>
                         ))
                     }

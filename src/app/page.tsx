@@ -5,7 +5,8 @@ import Featured from "src/components/Featured"
 import Hero from "src/components/Hero"
 import Slider from "src/components/Slider"
 import Vision from "src/components/Vision"
-import Newsletter from 'src/components/Newsletter'
+import Newsletter from 'src/components/Newslettert'
+import Newsletter2 from "src/components/Newsletter2"
 
 async function getData() {
         
@@ -46,7 +47,7 @@ const Home = async  () => {
           <div>
               
               {/* newsletter */}
-              <Newsletter />
+              <Newsletter2 />
               
               
           </div>

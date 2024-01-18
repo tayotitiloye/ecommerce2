@@ -3,7 +3,8 @@ import Link from 'next/link'
 import React from 'react'
 import ProductCont from 'src/components/ProductCont'
 
-export type ProductType = { id: number
+export type ProductType = {
+      id: number
       image: string
       price: number
       title: string

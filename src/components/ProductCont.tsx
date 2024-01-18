@@ -33,12 +33,6 @@ function ProductCont({ data,allcat }: Props) {
 
 
 
-    
-  
-
-
-
-
   return (
 
       

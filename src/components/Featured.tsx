@@ -17,13 +17,22 @@ function Featured({products}:Props) {
     return (
         <div className='relative mb-10'>
              <video
-                        className="w-full h-auto opacity-[90%]"
+                        className="w-full h-auto hidden md:block opacity-[90%]"
                         preload="false"
                         playsInline
                         loop
                         muted
                         autoPlay
                         src="/ecomm video.webm"
+                    />
+             <video
+                        className="w-full h-auto block md:hidden opacity-[90%]"
+                        preload="false"
+                        playsInline
+                        loop
+                        muted
+                        autoPlay
+                        src="/ecommerce video.webm"
                     />
         <motion.aside
         

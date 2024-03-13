@@ -23,7 +23,6 @@ function Newsletter2() {
         } catch (error) {
             console.log(error);
         }
-    
         
     } 
 
